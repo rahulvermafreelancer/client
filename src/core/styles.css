@@ -1,0 +1,27 @@
+.Navbar-Logo-mandoriya {
+  width: 250px;
+}
+
+.position-align-menu {
+  justify-content: right;
+}
+.user-menu-main-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.user-photo-size {
+  width: 50px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 50px;
+}
+@media only screen and (max-width: 720px) {
+  .Navbar-Logo-mandoriya {
+    width: 150px;
+  }
+  .user-menu-main-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

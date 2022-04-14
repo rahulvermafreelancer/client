@@ -1,0 +1,57 @@
+.scrolling-box-main {
+  padding: 10px;
+  background-color: var(--main-bg);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  overflow-y: scroll;
+  height: 40vh;
+}
+.latest-updates {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.itrmgmt {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 5%;
+}
+.card-main-container {
+  width: 30%;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--main-bg);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+.itr-home {
+  border: 5px solid;
+  margin: 20px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  border: none;
+}
+.title-itr{
+  font-size: 25px;
+  font-weight: 500;
+}
+.itr-box{
+  width: 25%;
+  padding: 25px;
+  margin-top: 8%;
+  box-shadow: var(--box-shadow);
+  background-color: var(--main-bg);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+.itr-mainbox-title{
+  font-size: 25px;
+  font-weight: 500;
+  
+}

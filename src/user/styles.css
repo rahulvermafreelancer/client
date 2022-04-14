@@ -1,0 +1,213 @@
+/*Apply CSS from Template*/
+
+.sidebar {
+  min-width: var(--sidebar-width);
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: var(--main-bg);
+  box-shadow: var(--box-shadow);
+}
+
+.sidebar__logo {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar__logo > img {
+  height: 120px;
+}
+
+.sidebar__item {
+  padding: 0 20px;
+}
+
+.sidebar__item-inner {
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  transition: color 0.3s ease 0s;
+}
+
+.sidebar__item-inner > i {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: var(--txt-color);
+}
+
+.sidebar__item-inner > span {
+  text-transform: capitalize;
+  color: var(--txt-color);
+}
+
+.sidebar__item-inner:hover {
+  background: linear-gradient(
+    to top right,
+    var(--main-color-orange),
+    var(--second-color-orange)
+  );
+  color: var(--txt-white);
+  border-radius: var(--border-radius);
+}
+
+.sidebar__item-inner.active {
+  border-radius: var(--border-radius);
+  background-image: linear-gradient(
+    to right,
+    var(--main-color-orange),
+    var(--second-color-orange)
+  );
+  color: var(--txt-white);
+}
+
+/* Right hand Side dashboard*/
+
+.status-card {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  background-color: var(--main-bg);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.5s ease 0s;
+  margin-bottom: 30px;
+}
+
+.status-card__icon {
+  width: 30%;
+  height: 100%;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.status-card__info {
+  flex-grow: 1;
+  text-align: center;
+  z-index: 1;
+  text-transform: capitalize;
+}
+
+.status-card__info > h4 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.status-card::before {
+  content: "";
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to top right,
+    var(--main-color-orange),
+    var(--second-color-orange)
+  );
+  position: absolute;
+  left: -50%;
+  top: 0;
+  transform: scale(0);
+  transition: transform 0.8s ease 0s;
+}
+
+.status-card:hover::before {
+  transform: scale(3);
+}
+
+.status-card.active::before {
+  transform: scale(3);
+}
+
+.status-card.active {
+  color: var(--txt-white);
+}
+
+.status-card:hover {
+  color: var(--txt-white);
+}
+
+.status-card {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  background-color: var(--main-bg);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.5s ease 0s;
+  margin-bottom: 30px;
+}
+
+.status-card__icon {
+  width: 30%;
+  height: 100%;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.status-card__info {
+  flex-grow: 1;
+  text-align: center;
+  z-index: 1;
+  text-transform: capitalize;
+}
+
+.status-card__info > h4 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.status-card::before {
+  content: "";
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to top right,
+    var(--main-color),
+    var(--second-color)
+  );
+  position: absolute;
+  left: -50%;
+  top: 0;
+  transform: scale(0);
+  transition: transform 0.8s ease 0s;
+}
+
+.status-card:hover::before {
+  transform: scale(3);
+}
+
+.status-card:hover {
+  color: var(--txt-white);
+}
+
+.card {
+  padding: 30px;
+  margin-bottom: 30px;
+  background-color: var(--main-bg);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+
+.full-height {
+  height: 100%;
+}
+
+.card.full-height {
+  height: calc(100% - 30px);
+}
