@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const BranchCard = ({ title, image }) => {
+const BranchCard = ({ title, image, address }) => {
   return (
-    <div className="card-main-container">
+    <Link className="card-main-container" to={address}>
       <img src={image} alt="itr-pic" width="50px" />
       <p>{title}</p>
-    </div>
+    </Link>
   );
 };
 

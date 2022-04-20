@@ -37,11 +37,11 @@
   box-shadow: var(--box-shadow);
   border: none;
 }
-.title-itr{
+.title-itr {
   font-size: 25px;
   font-weight: 500;
 }
-.itr-box{
+.itr-box {
   width: 25%;
   padding: 25px;
   margin-top: 8%;
@@ -49,9 +49,24 @@
   background-color: var(--main-bg);
   border-radius: var(--border-radius);
   text-align: center;
+  margin: 30px; 
+  cursor: pointer;
 }
-.itr-mainbox-title{
-  font-size: 25px;
+.itr-mainbox-title {
+  font-size: 20px;
   font-weight: 500;
-  
+}
+.card-alignment {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.circle-border {
+  border: 2px solid var(--second-color-orange);
+  padding-top: 40px;
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  margin: 0 auto;
+  margin-top: 25px;
 }

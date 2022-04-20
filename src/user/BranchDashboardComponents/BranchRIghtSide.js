@@ -2,6 +2,7 @@ import React from "react";
 import AutoScroll from "./AutoScroll";
 import "./styles.css";
 import BranchCard from "./BranchCard";
+import { Link } from "react-router-dom";
 
 const BranchRightSide = () => {
   return (
@@ -13,8 +14,10 @@ const BranchRightSide = () => {
         <p className="itrmgmt">I.T.R Management</p>
         <div className="row">
           <BranchCard image="/assets/coupen.webp" title="Purchase Coupon" />
-          <BranchCard image="/assets/coupen.webp" title="Apply for I.T.R" />
-          <BranchCard image="/assets/coupen.webp" title="Report Status" />
+          
+          <BranchCard image="/assets/coupen.webp" title="Apply for I.T.R" address="/branch/applyitr" />
+
+          <BranchCard image="/assets/coupen.webp" title="Report Status"  />
         </div>
       </div>
       <div>

@@ -20,6 +20,8 @@ import BranchDashboard from "./user/BranchDashboard";
 import BranchRoute from "./auth/helper/BranchRoutes";
 import BDMDashboard from "./user/BDMDashbaord";
 import ItrHome from "./user/BranchDashboardComponents/ItrHome";
+import ApplyItr from "./user/ITRform/ApplyItr";
+import ItrSubForms from "./user/ITRform/ItrSubFroms";
 
 const Routes = () => {
   return (
@@ -39,7 +41,6 @@ const Routes = () => {
           component={ManageCategories}
         />
         <AdminRoute path="/admin/create/product" exact component={AddProduct} />
-
         <AdminRoute path="/admin/products" exact component={ManageProducts} />
         <AdminRoute
           path="/admin/product/update/:productId"
@@ -55,11 +56,10 @@ const Routes = () => {
           exact
           component={BranchDashboard}
         />
-
         <BranchRoute path="/branch/itrhome" exact component={ItrHome} />
-
+        <BranchRoute path="/branch/applyitr" exact component={ApplyItr} />
+        <BranchRoute path="/branch/applyitr/itrsubforms" exact component={ItrSubForms} />
         <BdmRoute path="/bdm/dashboard" exact component={BDMDashboard} />
-
         <Route path="/signup" exact component={Signup} />
       </Switch>
     </BrowserRouter>
